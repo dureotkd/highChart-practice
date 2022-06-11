@@ -166,3 +166,7 @@ td {
   border: 1px solid #ccc;
   padding: 12px;
 }
+
+#test {
+  transition: all.3s;
+}

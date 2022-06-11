@@ -21,17 +21,19 @@ function onRenderCallback(
   commitTime, // 업데이트요청한 시간
   interactions // trace set
 ) {
-  console.log(phase, actualDuration, baseDuration);
+  // console.log(phase, actualDuration, baseDuration);
 }
 root.render(
-  <React.StrictMode>
-    <Profiler id="Render" onRender={onRenderCallback}>
-      <BrowserRouter>
-        <App />
-      </BrowserRouter>
-    </Profiler>
-  </React.StrictMode>
+  // <React.StrictMode>
+  <Profiler id="Render" onRender={onRenderCallback}>
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  </Profiler>
+  // </React.StrictMode>
 );
+
+
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
